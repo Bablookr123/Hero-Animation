@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  letter-spacing: 12px;
+  opacity: 0;
+
+  position: relative;   
+  z-index: 2;           
+}
+
+.metrics {
+  margin-top: 40px;
+  display: flex;
+  gap: 60px;
+  opacity: 0;
+
+  position: relative;  
+  z-index: 2;           
+}
+
+.metric h2 {
+  font-size: 2rem;
+  color: #00ffc3;
+}
+
+.metric p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.floating-object {
+  width: 160px;
+  height: 160px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #00ffc3, #005eff);
+  position: absolute;
+  top: 20%;
+  right: 10%;
+
+  z-index: 1;  
+}
+
+.spacer {
+  height: 150vh;
+  background: #1a1a1a;
+}
